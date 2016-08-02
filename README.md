@@ -26,5 +26,7 @@ Website Optimization is a project that showcases performance enhancements made t
 - Changed all instances of "document.querySelector"/"document.querySelectorAll" to "document.getElementById" or "document.getElementByClassName" in **main.js** for pizza.html
 - Made the function changePizzaSlices(size) more efficient by adding cases for the size changes and iterating through the pizzas with a 'for' loop in **main.js** for pizza.html
 - Applied "transform=translateX()" to the function updatePositions() in **main.js** for pizza.html
+- Added "will-change: transform" to the "mover" class in the function updatePositions in the CSS for **pizza.html**
+- Removed unnecessary Google font in **index.html**
 
 **For more detailed explanations of changes made in main.js for pizza.html, see the code comments in main.js [here] (https://github.com/drsimonXX/drsimonXX.github.io/blob/master/views/js/main.js "main.js")**.
