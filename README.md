@@ -6,7 +6,7 @@ Website Optimization is a project that showcases performance enhancements made t
 - The goals of the optimizations performed on Cam's Pizzeria site (pizza.html) are 1) to consistently achieve a frames per second (fps) of '60' while scrolling through the site and 2) to resize the pizzas in less than '5' milliseconds (ms). 
 
 ##How To Use the Site
-1. In order to view the sample portfolio site with its changes, click [here](https://drsimonxx.github.io/ "Danielle R. Simon's Website Optimization"). *It is preferable that you open the site in **Google Chrome** so that you can use its Developer Tools*. 
+1. In order to view the sample portfolio site with its changes, click [here](https://drsimonxx.github.io/ "Danielle R. Simon's Website Optimization"). *It is preferable that you open the site in Google Chrome so that you can use its Developer Tools*. 
 2. Go to [PageSpeed Insights] (https://developers.google.com/speed/pagespeed/insights/ "PageSpeed Insights") and enter in **https://drsimonXX.github.io** in order to measure the mobile and desktop performance. The goal is a score of '90' or above on both views for this page. 
 3. Return to the sample portfolio site, scroll down and click on the last link--**"Cam's Pizzeria."** 
 4. Open Developer Tools (you can right-click on any white space on the site and select "Inspect") and select "Timeline." 
