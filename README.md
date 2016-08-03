@@ -29,4 +29,4 @@ Website Optimization is a project that showcases performance enhancements made t
 - Moved 'var phase' variable from the loop inside function updatePositions outside the loop in **main.js** for pizza.html
 - Removed unnecessary Google font in **index.html**
 
-**For more detailed explanations of changes made in main.js for pizza.html, see the code comments in main.js [here] (https://github.com/drsimonXX/drsimonXX.github.io/blob/master/views/js/main.js "main.js")**.
+**For more detailed explanations of changes made in main.js for pizza.html, see the code comments in main.js [here] (https://github.com/drsimonXX/drsimonXX.github.io/blob/master/dist/views/js/main.js "main.js")**.
