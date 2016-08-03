@@ -425,7 +425,7 @@ var resizePizzas = function(size) {
   function determineDx (elem, size) {
     var oldWidth = elem.offsetWidth;
 	//changed document.querySelector to more efficient document.getElementById to eliminate bottlenecks
-    var windowWidth = document.getElementById("#randomPizzas").offsetWidth;
+    var windowWidth = document.getElementById("randomPizzas").offsetWidth;
     var oldSize = oldWidth / windowWidth;
 
     // Changes the slider value to a percent width
@@ -523,11 +523,12 @@ function updatePositions() {
   window.performance.mark("mark_start_frame");
 
   //changed document.querySelectorAll to more efficient document.getElementsByClassName to eliminate bottleneck
-  var items = document.getElementsByClassName('.mover');		
+  var items = document.getElementsByClassName('mover');	
+  var phase = [];
+  //declared var phase outsde of for loop for better efficiency of loop
   for (var i = 0; i < items.length; i++) {
-    var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
-	//applied transform=transformX() below to let DOM know this will change and help smooth performance
-    items[i].style.transform = translateX(items[i].basicLeft + 100 * phase + 'px');
+    phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
+	items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
@@ -547,7 +548,8 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  for (var i = 0; i < 200; i++) {
+  for (var i = 0; i < 48; i++) {
+	  //changed i < 200 to i < 48, 200 not necessary
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
@@ -555,7 +557,8 @@ document.addEventListener('DOMContentLoaded', function() {
     elem.style.width = "73.333px";
     elem.basicLeft = (i % cols) * s;
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
-    document.querySelector("#movingPizzas1").appendChild(elem);
+    document.getElementById("movingPizzas1").appendChild(elem);
+	//changed 'querySelector' to 'getElementById' for more efficiency
   }
   updatePositions();
 });
